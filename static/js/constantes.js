@@ -1,0 +1,4 @@
+const VALORES = {
+    NAME: '',
+    MOSTPLAYEDGAME: ''
+}

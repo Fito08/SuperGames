@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../static/img/icon.png" type="image/x-icon">
+  <title>Tetris en JavaScript</title>
+  <!-- google font -->
+  <meta name="theme-color" content="#fff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+  <!-- box icons -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- CSS links-->
+  <link rel="stylesheet" href="../static/css/GenCss.css">
+  <link rel="stylesheet" href="../static/css/TetrisCss.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="../Index.html" class="nav-logo">
+                SuperGames
+            </a>
+            <div class="dark-mode-toggle" id="dark-mode-toggle">
+                <i class="bx bxs-sun"></i>
+                <i class="bx bxs-moon"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="GameDiv">
+        <div id="app">
+            <section>Haz click aquí para jugar</section>
+            <canvas></canvas>  
+        </div>
+    </div>
+    
+  <strong>Puntuación: <span></span></strong>  
+  <script src="../static/js/toggleDark.js"></script>
+  <script src="../static/js/TetrisApp.js"></script>
+</body>
+</html>

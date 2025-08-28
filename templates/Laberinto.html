@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../static/img/icon.png" type="image/x-icon">
+    <title>Generador de laberintos</title>
+    <!-- Links Ajenos-->
+    <meta name="theme-color" content="#fff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Css-->
+    <link rel="stylesheet" href="../static/css/GenCss.css">
+    <link rel="stylesheet" href="../static/css/LaberintoCss.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="../Index.html" class="nav-logo">
+                SuperGames
+            </a>
+            <div class="dark-mode-toggle" id="dark-mode-toggle">
+                <i class="bx bxs-sun"></i>
+                <i class="bx bxs-moon"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="Tablero">
+        <button class="btnI" id="btn-generar">Generar Nuevo Laberinto</button>
+        <div id="laberinto">
+            
+        </div>
+        <div class="pts">
+            <p id="puntos">Puntos: 0</p>
+        </div>
+    </div>
+    <script src="../static/js/toggleDark.js"></script>
+    <script src="../static/js/LaberintoApp.js"></script>
+</body>
+</html>

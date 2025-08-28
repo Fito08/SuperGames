@@ -1,0 +1,70 @@
+.Tablero {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.btnI {
+    width: 300px;
+    height: 35px;
+    color: #00aeef;
+    background-color: #fff;
+    border: 0.3px solid #00aeef;
+}
+.btnI:hover {
+    box-shadow: 0px 0px 0px 2px #0f7fa8;
+    color: #0f7fa8;
+}
+.dark .btnI {
+    color: #00aeef;
+    background-color: #1a1a2e;
+}
+.dark .btnI:hover {
+    background-color: #2a2a38;
+}
+
+#laberinto {
+    display: grid;
+    margin: auto;
+    width: fit-content;
+}
+
+.celda {
+    width: 40px;
+    height: 40px;
+}
+
+.pared {
+    background-color: black;
+}
+
+.camino {
+    background-color: aliceblue;
+}
+
+.dark .camino {
+    background-color: #afafaf;
+}
+
+.jugador {
+    background-color: aqua;
+    transition: transform 0.1s ease-in-out;
+}
+
+.dark .jugador {
+    background-color: rgb(7, 184, 184);
+}
+
+.salida {
+    background-color: rgb(1, 175, 1);
+}
+
+.dark .salida {
+    background-color: green;
+}
+
+p {
+    color: #00aeef;
+}

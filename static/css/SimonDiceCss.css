@@ -1,0 +1,110 @@
+body {
+    color: #00aeef;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 80px;
+    font-size: 48px;
+    animation: titleFadeIn 1s forwards;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 20px;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.color-button {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    cursor:pointer;
+    opacity: 0.8;
+}
+.color-button:hover {
+    opacity: 1;
+    border: 1px solid #00aeef;
+}
+
+#green {
+    background-color: #00a74a;
+}
+#red {
+    background-color: #9f0f17;
+}
+#yellow {
+    background-color: #cca707;
+}
+#blue {
+    background-color: #094a8f;
+}
+
+#start-button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #00aeef;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 20px;
+    animation: buttonFadeIn 2s forwards;
+}
+#start-button:hover {
+    background-color: #ddd;
+}
+
+.dark #start-button:hover {
+    background-color: #1a1a2e;
+    border: 2px solid #00aeef;
+}
+
+@keyframes flashSequence {
+    0%{opacity: 1; transform: scale(1);}
+    50%{opacity: 1; transform: scale(1.2);}
+    100%{opacity: 1; transform: scale(1);}
+}
+
+@keyframes flashClick {
+    0%{opacity: 1;}
+    50%{opacity: 0.6;}
+    100%{opacity: 1;}
+}
+
+@keyframes titleFadeIn {
+    from{opacity: 0; transform: translateY(-20px);}
+    to{opacity: 1; transform: translateY(0);}
+}
+
+@keyframes buttonFadeIn {
+    from{opacity: 0; transform: translateY(20px);}
+    to{opacity: 1; transform: translateY(0);}
+}
+
+@keyframes errorShake {
+    0%{transform: translateX(0);}
+    20%{transform: translateX(-20px);}
+    40%{transform: translateX(20px);}
+    60%{transform: translateX(-15px);}
+    80%{transform: translateX(15px);}
+    100%{transform: translateX(0);}
+}
+
+.sequence-active {
+    animation: flashSequence 0.6s;
+}
+
+.click-active {
+    animation: flashClick 0.3s 0.6s;
+}
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.container.error {
+    animation: errorShake 0.5s;
+}

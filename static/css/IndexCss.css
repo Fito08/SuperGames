@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-screen {
+    display: none;
+    padding: 40px 0;
+    width: 75%;
+    justify-content: space-between;
+    border-radius: var(--border-radius);
+    gap: var(--gap);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-screen.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    transform: translateX(0);
+    gap: 25px;
+}
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.logout-clas {
+    text-align: center;
+    border: none;
+    color: var(--blue);
+    font-size: var(--font-size-lg);
+    cursor: pointer;
+}
+
+.dark .main {
+    color: var(--color-txt);
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.game-container {
+    border-radius: 13px;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    opacity: 0.8;
+    animation: buttonFadeIn 1s forwards;
+}
+.game-container:hover {
+    border: 3px solid #00aeef;
+    opacity: 1;
+    transform: scale(1.08);
+    transition: transform 0.s ease-in-out;
+}
+
+.link-game {
+    position: relative;
+    border-radius: 10px 10px;
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.link-game h2 {
+    text-align: center;
+    color: #fff;
+    background-color: #00aeef;
+    width: 100%;
+}
+
+
+
+#AdivSim_game {
+    background-image: url(../img/AdivSim.png);
+}
+
+#tetris_game {
+    background-image: url(../img/tetris.png);
+}
+
+#Memoria_game {
+    background-image: url(../img/Memoria.png);
+}
+
+#EncuSumb_game {
+    background-image: url(../img/EncuSubm.png);
+}
+
+#SigOrd_game {
+    background-image: url(../img/SigOrd.png);
+}
+
+#Laberintos_game {
+    background-image: url(../img/LaberintoImg.png);
+}
+
+#veinteCuarentayocho_game {
+    background-image: url(../img/2048img.png);
+}
+
+#SimonDice-Game {
+    background-image: url(../img/SimonDice.png);
+}
+
+
+#show-name.aktive{
+    display: block;
+}
+
+#show-name {
+    display: none;
+}
+
+
+@keyframes buttonFadeIn {
+    from{opacity: 0; transform: translateY(20px);}
+    to{opacity: 1; transform: translateY(0);}
+}

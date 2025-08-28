@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bar Color -->
+    <meta name="theme-color" content="#fff">
+    <title id="titulo">Inicio de sesion</title>
+    <link rel="shortcut icon" href="static/img/icon.png" type="image/x-icon">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Css -->
+    <link rel="stylesheet" href="static/css/GenCss.css">
+    <link rel="stylesheet" href="static/css/IndexCss.css">
+</head>
+<body>
+    <script src="static/js/startApp.js"></script>
+    <!-- top nav -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                SuperGames
+            </a>
+            <p id="show-name"></p>
+            <div class="botones">
+                <div class="logout-clas" id="btn-logout">
+                    <i class='bx bx-log-out'></i>
+                </div>
+                <div class="dark-mode-toggle" id="dark-mode-toggle">
+                    <i class="bx bxs-sun"></i>
+                    <i class="bx bxs-moon"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end top nav -->
+
+    <!-- main -->
+    <div class="main">
+        <div class="screen">
+            <!-- start screen -->
+            <div class="start-screen active" id="start-screen">
+                <input type="text" placeholder="Your name" maxlength="11" class="input-name" id="input-name">
+                <div class="btn btn-blue" id="btn-play">Iniciar</div>
+            </div>
+        </div>
+
+        <div class="main-screen" id="main-screen">
+            <div class="game-container">
+                <a href="templates/TetrisGame.html"><div class="link-game" id="tetris_game">
+                    <h2>Tetris</h2>
+                </div></a>
+            </div>
+            <div class="game-container">
+                <a href="templates/AdivSim.html"><div class="link-game" id="AdivSim_game">
+                    <h2>Adivina el Simbolo</h2>
+                </div></a>
+            </div>
+            <div class="game-container">
+                <a href="templates/Memoria.html"><div class="link-game" id="Memoria_game">
+                    <h2>Memoria</h2>
+                </div></a>
+            </div>
+            <div class="game-container">
+                <a href="templates/SigOrd.html"><div class="link-game" id="SigOrd_game">
+                    <h2>Mente veloz</h2>
+                </div></a>
+            </div>
+            <div class="game-container">
+                <a href="templates/EncuSubm.html"><div class="link-game" id="EncuSumb_game">
+                    <h2>Encuentra el submarino</h2>
+                </div></a>
+            </div>
+            <div class="game-container">
+                <a href="templates/2048.html"><div class="link-game" id="veinteCuarentayocho_game">
+                    <h2>2048</h2>
+                </div></a>
+            </div>
+            <div class="game-container">
+                <a href="templates/SimonDice.html"><div class="link-game" id="SimonDice-Game">
+                    <h2>Simon dice</h2>
+                </div></a>
+            </div>
+            <div class="game-container">
+                <a href="templates/Laberinto.html"><div class="link-game" id="Laberintos_game">
+                    <h2>Laberintos</h2>
+                </div></a>
+            </div>
+        </div>
+    </div> 
+    <!-- end main -->
+    
+    <script src="static/js/toggleDark.js"></script>
+    <script src="static/js/constantes.js"></script>
+</body>
+</html>

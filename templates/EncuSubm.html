@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+	<title>Encuentra el Submarino</title>
+    <!-- google font -->
+    <meta name="theme-color" content="#fff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!--CSS LINKS-->
+    <link rel="stylesheet" href="../static/css/GenCss.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/EncuSubmCss.css">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="../Index.html" class="nav-logo">
+                SuperGames
+            </a>
+            <div class="dark-mode-toggle" id="dark-mode-toggle">
+                <i class="bx bxs-sun"></i>
+                <i class="bx bxs-moon"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="Dou">
+        <div class="Todo">
+            <div class="tilte">
+                <h1>Encuentra el Submarino</h1>
+            </div>
+            <div class="contenedor">
+                <div class="colLeft">
+                    <div>
+                        <div class="divEleccionTurnos">
+                            <div>
+                                <label>Eligue cuantos intentos:</label>
+                            </div>
+                            <div class="eleccionTurnos">
+                                <button class="block" id="btn_menos_turnos">-</button><input type="number" value="5" disabled class="inputElecciones" id="elegirTurnos" min="1" max="25"><button class="block" id="btn_mas_turnos">+</button>
+                            </div>
+                        </div><br>
+                        <div class="Intentos verIIG">
+                            <label>Intentos: <br><input type="number" disabled class="colorInput inputElecciones"  id="contadorIntentosG"> </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="colMedia">
+                    <div>
+                        <input type="text" disabled class="Texto" value="Esperando a iniciar..." id="principalText">
+                    </div>
+                    <div class="tablero">
+                        <button class="btnE" id="btn1"></button>
+                        <button class="btnE" id="btn2"></button>
+                        <button class="btnE" id="btn3"></button>
+                        <button class="btnE" id="btn4"></button>
+                        <button class="btnE" id="btn5"></button><br>
+                        <button class="btnE" id="btn6"></button>
+                        <button class="btnE" id="btn7"></button>
+                        <button class="btnE" id="btn8"></button>
+                        <button class="btnE" id="btn9"></button>
+                        <button class="btnE" id="btn10"></button><br>
+                        <button class="btnE" id="btn11"></button>
+                        <button class="btnE" id="btn12"></button>
+                        <button class="btnE" id="btn13"></button>
+                        <button class="btnE" id="btn14"></button>
+                        <button class="btnE" id="btn15"></button><br>
+                        <button class="btnE" id="btn16"></button>
+                        <button class="btnE" id="btn17"></button>
+                        <button class="btnE" id="btn18"></button>
+                        <button class="btnE" id="btn19"></button>
+                        <button class="btnE" id="btn20"></button><br>
+                        <button class="btnE" id="btn21"></button>
+                        <button class="btnE" id="btn22"></button>
+                        <button class="btnE" id="btn23"></button>
+                        <button class="btnE" id="btn24"></button>
+                        <button class="btnE" id="btn25"></button>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="text" disabled class="Texto decision" id="secundariText" >
+                        </div>
+                        <div class="verIIP">
+                            <label>Intentos: <input type="number" disabled class="colorInput" id="contadorIntentosP"> </label>
+                        </div>
+                    </div>
+                    <div class="interfaz">
+                        <button class="btnLargo block" id="startGame">Iniciar</button>
+                        <button class="btnLargo block" id="resetGame">Reiniciar</button>
+                        <button class="btnLargo block verBG" id="resetPuntosGrande">Resetear Puntos</button>
+                    </div>
+                </div>
+                <div class="colRigth">
+                    <div class="reset_Points">
+                        <button class="btn_colRigth block verBP" id="resetPuntosPequeño">Resetear Puntos</button>
+                    </div>
+                    <div class="TurnosFallidos">
+                        <label>Turnos Fallidos: <input type="number" disabled class="colorInput" value="0" id="contadorFallosTurnos"> </label>
+                    </div>
+                    <div class="JuegosFallidos">
+                        <label>Juegos Fallidos: <input type="number" disabled class="colorInput" value="0" id="contadorFallosJuegos"> </label>
+                    </div>
+                    <div class="JuegosAcertados">
+                        <label>Acertados: <br><input type="number" disabled class="colorInput" value="0" id="contadorAcertados"> </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/toggleDark.js"></script>
+    <script src="../static/js/EncuSubmApp.js"></script>
+</body>
+</html>

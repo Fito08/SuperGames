@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../static/img/icon.png" type="image/x-icon">
+	<title>Juego Memoria</title>
+    <!-- Links Ajenos-->
+    <meta name="theme-color" content="#fff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Css-->
+    <link rel="stylesheet" href="../static/css/GenCss.css">
+    <link rel="stylesheet" href="../static/css/MemoriaCss.css">
+</head>
+<body>
+<div>
+    <nav>
+        <div class="nav-container">
+            <a href="../Index.html" class="nav-logo">
+                SuperGames
+            </a>
+            <div class="dark-mode-toggle" id="dark-mode-toggle">
+                <i class="bx bxs-sun"></i>
+                <i class="bx bxs-moon"></i>
+            </div>
+        </div>
+    </nav>
+	<div class="Allgame">
+        <div>
+            <h1> Juego De Memoria</h1>
+        </div>
+        <div class="contenedor">
+            <div>
+                <input class="input-datos" type="text" disabled id="ganasteElse">
+            </div>
+            <div>
+                <button class="btnM bgDesactivo" id="btn1"></button>
+                <button class="btnM bgDesactivo" id="btn2"></button>
+                <button class="btnM bgDesactivo" id="btn3"></button>
+                <button class="btnM bgDesactivo" id="btn4"></button><br>
+                <button class="btnM bgDesactivo" id="btn5"></button>
+                <button class="btnM bgDesactivo" id="btn6"></button>
+                <button class="btnM bgDesactivo" id="btn7"></button>
+                <button class="btnM bgDesactivo" id="btn8"></button><br>
+                <button class="btnM bgDesactivo" id="btn9"></button>
+                <button class="btnM bgDesactivo" id="btn10"></button>
+                <button class="btnM bgDesactivo" id="btn11"></button>
+                <button class="btnM bgDesactivo" id="btn12"></button><br>
+                <button class="btnM bgDesactivo" id="btn13"></button>
+                <button class="btnM bgDesactivo" id="btn14"></button>
+                <button class="btnM bgDesactivo" id="btn15"></button>
+                <button class="btnM bgDesactivo" id="btn16"></button>
+    
+            </div>
+            <div>
+                <button class="btnLargo" id="btnIniciar"> Iniciar </button>
+            </div>
+            <div class="Datos">
+                <label>Tiempo:</label> <input class="input-datos" type="number" id="contadorTiempo" disabled>
+                <label>Mejor Tiempo:</label> <input class="input-datos" type="number" id="bestTime" disabled>
+                <label>Turnos fallados:</label><input class="input-datos" type="number" id="contadorTurnos" disabled>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../static/js/toggleDark.js"></script>
+<script src="../static/js/MemoriaApp.js"></script>
+</body>
+</html>

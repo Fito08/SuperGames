@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    height: 100vh;
+    color: #00aeef;
+}
+
+.Allgame {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-datos {
+    font-size: 25px;
+    background-color: #fff;
+    border: none;
+    text-align: center;
+}
+
+.dark .input-datos {
+    background-color: #1a1a2e;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btnM {
+    font-size: 30px;
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+	vertical-align: top;
+}
+
+.btnLargo {
+    height:50px;
+    width: 250px;
+    color: #00aeef;
+    background-color: #fff;
+    border: 1px solid #00aeef;
+}
+
+.dark .btnLargo {
+    background-color: #1a1a2e;
+}
+
+.btnLargo:hover, 
+.dark .btnLargo:hover {
+    color: #1a1a2e;
+    background-color: #00aeef;
+}
+.dark .btnLargo:hover {
+    color: #1a1a2e;
+}
+.btnLargo:hover{
+    color: #fff;
+}
+
+.bgDesactivo {
+	background-color: #afafaf;
+}
+
+.dark .bgDesactivo {
+    background-color: #2a2a38;
+}
+
+.Datos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

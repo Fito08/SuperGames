@@ -1,0 +1,110 @@
+:root {
+    --border-radius: 10px;
+    --bgcOff: #f0f2f5;
+    --white: #fff;
+    --blue: #00aeef;
+    --black: #000;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.screen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btnA {
+	font-size: 35px;
+	height: 90px;
+	vertical-align: top;
+	width: 90px;
+	border: 0.3px solid black;
+	border-radius: 0;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.dark .btnA {
+    background-color: #2a2a38;
+}
+.dark .btnA {
+    color: #00aeef;
+    border: 0.3px solid #00aeef;
+}
+.btnA.selected {
+    color: var(--blue);
+    border: 0.2px solid var(--blue);
+}
+.dark .btnA.selected {
+    color: #afafaf;
+    border: 0.2px solid #afafaf;
+}
+
+.btnA.fall {
+    color: red;
+    border: 0.2px solid red;
+}
+
+.tablero {
+    padding: 10px;
+    gap: 20px;
+}
+.tablero.fall {
+    background-color: rgb(255, 56, 56);
+}
+.dark .tablero.fall {
+    background-color: rgb(192, 5, 5);
+}
+
+.interfaz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#start {
+    width: 50%;
+    background-color: white;
+    border: 0.3px solid #afafaf;
+    color: #3b3b3b;
+}
+#start:hover {
+    color: #00aeef;
+    border: 0.3px solid #00aeef;
+}
+.dark #start {
+    color: #00aeef;
+    border: 0.3px solid #00aeef;
+    background-color: #1a1a2e;
+}
+.dark #start:hover {
+    border: 0.3px solid #afafaf;
+    color: #afafaf;
+}
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+input {
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.dark input {
+    color: var(--blue);
+    background-color: #1a1a2e;
+    border: 0.3px solid #00aeef;
+}

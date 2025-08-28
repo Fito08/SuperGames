@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*--- Estilos: generales ---*/
+
+html {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+h1,
+button {
+	font-family: "Permanent Marker", cursive;
+}
+.tilte {
+	width: 70%;
+}
+h1 {
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	width: 92%;
+	padding: 3%;
+	font-size: 300%;
+	color: #00aeef;
+	border-radius: 50px;
+}
+
+.tilte {
+	text-align: center;
+}
+/*--- Estilos: Orden de la pagina ---*/
+.Dou {
+    margin-top: 50px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Todo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.contenedor {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	max-width: 1250px;
+    gap: 20px;
+}
+.interfaz {
+	margin-top: 30px;
+}
+.colRigth {
+	margin-top: 50px;
+	height: 400px;
+	width: 300px;
+	display: flex;
+    align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.eleccionTurnos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+}
+
+.eleccionTurnos input, .eleccionTurnos button {
+	text-align: center;
+	width: 50px;
+	vertical-align: top;
+	height: 40px;
+	background-color: #00aeef;
+	color: #fff;
+}
+.eleccionTurnos button {
+	border: 2px solid #0398ce;
+	font-size: 150%;
+}
+.dark .eleccionTurnos button {
+	border: 2px solid #0398ce;
+	font-size: 150%;
+}
+.eleccionTurnos input {
+	font-size: 140%;
+}
+
+.divEleccionTurnos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.inputElecciones {
+	width: 40%;
+	height: 40px;
+}
+
+.colLeft {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.verIIP {
+	display: none;
+}
+
+/*--- Estilos: de la pagina ---*/
+
+.tablero {
+	display: inline-block;
+	padding: 10px;
+	border: 4px solid #00aeef;
+	border-radius: 10px;
+}
+
+.dark .tablero {
+    border: none;
+}
+
+label {
+    color: #00aeef;
+}
+
+
+/*--- Estilos: Inputs y Labels ---*/
+
+input {
+	background-color: #fff;
+	border: none;
+}
+
+.dark input {
+    background-color: #1a1a2e;
+}
+
+.Texto {
+	color: #00aeef;
+    opacity: 0.5;
+	text-align: center;
+	height: 35px;
+	font-size: 30px;
+	vertical-align: top;
+	width: 80%;
+	border: none;
+}
+
+.dark .Texto {
+    color: rgba(255, 255, 255);
+    opacity: 0.5;
+}
+
+.colorInput {
+	color: #00aeef;
+	text-align: center;
+	font-size: 25px;
+}
+
+ label {
+ 	color: #00aeef;
+ 	font-size: 25px;
+ }
+
+
+/*--- Estilos: Botones ---*/
+.btnE {
+	color: #fff;
+	background-color: #00aeef;
+	font-size: 27px;
+	height: 90px;
+	margin: 1px;
+	vertical-align: top;
+	width: 90px;
+	border: none;
+	border-radius: 5px;
+}
+
+.block {
+    border: 2px solid #00aeef;
+    color: #00aeef;
+}
+.dark .block {
+    border:  none;
+    background-color: #1a1a2e;
+}
+.block:hover {
+	background-color: #00aeef;
+    color: #fff;
+}
+
+.dark .block:hover {
+	background-color: #00aeef;
+    color: #1a1a2e;
+}
+
+.btnELargo {
+	border:none;
+	border-radius: 5px;
+	background-color: #00aeef;
+	margin-bottom: 10px;
+	font-size: 16px;
+	height: 50px;
+	width: 316px;
+}
+
+.btnE_colRigth {
+	width: 45%;
+	border:none;
+	border-radius: 5px;
+	background-color: #51a7c0;
+	font-size: 15px;
+	height: 40px;
+}
+
+/*--- Estilo: mediaquerys ---*/
+
+.verBG {
+	display: none;
+}
+
+@media screen and (max-width: 1400px) {
+	.btnE {
+		height: 90px;
+		width: 90px;
+		font-size: 27px;
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	.btnE {
+		height: 80px;
+		width: 80px;
+		font-size: 25px;
+	}
+	.colRigth {
+		width: 200px;
+	}
+	.btnE_colRigth {
+		width: 70%;
+	}
+	.Texto {
+		font-size: 30px;
+	}
+	label {
+		font-size: 25px;
+	}
+	.colorInput {
+		font-size: 30px;
+		width: 30%;
+	}
+	.btnELargo {
+		width: 100%;
+	}
+	.divEleccionTurnos label {
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 1077px) {
+	.decision {
+		padding: 5px;
+	}
+	.colLeft {
+		height: 100%;
+	}
+	.verIIG {
+		display: none;
+	}
+	.verIIP {
+		display: revert;
+	}
+	.btnE {
+		height: 90px;
+		width: 90px;
+		font-size: 25px;
+	}
+	.interfaz {
+		display: flex;
+		flex-direction: column;
+	}
+	.colorInput {
+		margin-bottom: 20px;
+		font-size: 30px;
+		width: 100%;
+	}
+	.colRigth {
+		flex-direction: row;
+		border-radius: 15px;
+		border:  5px solid #51a7c0;
+		height: 100%;
+		width: 80%;
+	}
+	.colRigth input {
+		width: 70%;
+	}
+	.contenedor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 1250px;
+	}
+	.Texto {
+		font-size: 30px;
+	}
+	.btnELargo {
+		width: 100%;
+	}
+	.verBG {
+		display: revert;
+		margin: 0;
+	}
+	.verBP {
+		display: none;
+	}
+	.divEleccionTurnos label {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.btnE {
+		height: 70px;
+		width: 70px;
+		font-size: 15px;
+	}
+	.colLeft label {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+    #principalText {
+        font-size: 20px;
+    }
+    .Dou {
+        margin-top: 100px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .verIIP {
+        font-size: 10px;
+    }
+    .contenedor {
+        gap: 0px;
+    }
+    label{
+        font-size: 15px;
+    }
+    #contadorIntentosP {
+        font-size: 15px;
+    }
+	.btnE {
+		height: 45px;
+		width: 45px;
+		font-size: 13px;
+	}
+	.colLeft label {
+		font-size: 15px;
+	}
+}

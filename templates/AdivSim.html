@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../static/img/icon.png" type="image/x-icon">
+	<title>Memoriza Elementos</title>
+    <!--Links de pags ajenas-->
+    <meta name="theme-color" content="#fff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Css-->
+    <link rel="stylesheet" href="../static/css/GenCss.css">
+	<link rel="stylesheet" href="../static/css/AdivNumCss.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="../Index.html" class="nav-logo">
+                SuperGames
+            </a>
+            <div class="dark-mode-toggle" id="dark-mode-toggle">
+                <i class="bx bxs-sun"></i>
+                <i class="bx bxs-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="Tablero" id="Tablero">
+        <div>
+            <button class="btnA bx" id="btn1"></button>
+            <button class="btnA bx" id="btn2"></button>
+            <button class="btnA bx" id="btn3"></button>
+            <button class="btnA bx" id="btn4"></button><br>
+            <button class="btnA bx" id="btn5"></button>
+            <button class="btnA bx" id="btn6"></button>
+            <button class="btnA bx" id="btn7"></button>
+            <button class="btnA bx" id="btn8"></button><br>
+            <button class="btnA bx" id="btn9"></button>
+            <button class="btnA bx" id="btn10"></button>
+            <button class="btnA bx" id="btn11"></button>
+            <button class="btnA bx" id="btn12"></button><br>
+            <button class="btnA bx" id="btn13"></button>
+            <button class="btnA bx" id="btn14"></button>
+            <button class="btnA bx" id="btn15"></button>
+            <button class="btnA bx" id="btn16"></button>
+        </div>
+    </div>
+    <div class="genAl">
+        <button class="btnI" id="botonIniciar">Submit</button>
+        <div>
+            <label for="ptsobt"><h2>Puntaje:</h2></label><input type="number" id="ptsobt" disabled><br>
+            <p id="Mejorscore"> Record:</p>
+        </div>
+    </div>
+<script src="../static/js/toggleDark.js"></script>
+<script src="../static/js/AdivSimApp.js"></script>
+</body>
+</html>
